@@ -15,6 +15,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+	process.env.SECRET_MESSAGE = "888" && console.log('GM:');
+	
 	return (
     <Layout home>
       {/* Keep the existing code here */}
